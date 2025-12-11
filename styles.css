@@ -70,7 +70,7 @@ a {
   gap: 0.65rem;
 }
 .logo-image {
-  height: 100px;      /* adjust this number to resize */
+  height: 220px;      /* adjust this number to resize */
   width: auto !important; 
   max-width: 500px !important;
   object-fit: contain;
