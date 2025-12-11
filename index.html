@@ -271,41 +271,61 @@
         </ul>
       </div>
 
-      <form class="contact-form" action="mailto:jeff@stewartbradleycompanies.com" method="post" enctype="text/plain">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input id="name" name="Name" type="text" required />
-          </div>
-          <div class="form-field">
-            <label for="email">Email</label>
-            <input id="email" name="Email" type="email" required />
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-field">
-            <label for="phone">Phone</label>
-            <input id="phone" name="Phone" type="tel" />
-          </div>
-          <div class="form-field">
-            <label for="service">Service Type</label>
-            <select id="service" name="Service">
-              <option value="">Select one</option>
-              <option>Home Renovation</option>
-              <option>Deck / Pier Rebuild</option>
-              <option>Construction Management / Consulting</option>
-              <option>Other / Not Sure</option>
-            </select>
-          </div>
-        </div>
-        <div class="form-field">
-          <label for="message">Project Details</label>
-          <textarea id="message" name="Message" rows="4" placeholder="Briefly describe your project, location, and timing."></textarea>
-        </div>
-        <button type="submit" class="btn-primary full-width">Send Project Inquiry</button>
-      </form>
+      <form
+  class="contact-form"
+  action="https://formspree.io/f/abcdwxyz"  <!-- replace with your Formspree endpoint -->
+  method="POST"
+>
+  <div class="form-row">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" required />
     </div>
-  </section>
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" required />
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-field">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="tel" />
+    </div>
+    <div class="form-field">
+      <label for="service">Service Type</label>
+      <select id="service" name="service">
+        <option value="">Select one</option>
+        <option value="Home Renovation">Home Renovation</option>
+        <option value="Deck / Pier Rebuild">Deck / Pier Rebuild</option>
+        <option value="Construction Management / Consulting">Construction Management / Consulting</option>
+        <option value="Other / Not Sure">Other / Not Sure</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-field">
+    <label for="message">Project Details</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      placeholder="Briefly describe your project, location, and timing."
+    ></textarea>
+  </div>
+
+  <!-- Optional: sets subject line of the email you receive -->
+  <input
+    type="hidden"
+    name="_subject"
+    value="New Project Inquiry - Stewart Bradley Companies"
+  />
+
+  <!-- Optional: simple thank-you redirect (can be your own page later) -->
+  <!-- <input type="hidden" name="_redirect" value="https://www.stewartbradleycompanies.com/#contact-thanks" /> -->
+
+  <button type="submit" class="btn-primary full-width">Send Project Inquiry</button>
+</form>
 
   <!-- Footer -->
   <footer class="site-footer">
