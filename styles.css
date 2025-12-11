@@ -82,16 +82,17 @@ a {
 }
 
 .logo-title {
-  font-size: 0.95rem;
-  font-weight: 650;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #e5e7eb;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .logo-subtitle {
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #9ca3af;
+  opacity: 0.85;
 }
 
 /* Nav */
