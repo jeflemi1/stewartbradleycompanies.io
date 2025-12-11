@@ -67,7 +67,7 @@ a {
   gap: 0.65rem;
 }
 .logo-image {
-  height: 42px;   /* adjust this number to make logo bigger/smaller */
+  height: 20px;   /* adjust this number to make logo bigger/smaller */
   width: auto;
   display: block;
 }
