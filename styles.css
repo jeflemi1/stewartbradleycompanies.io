@@ -48,13 +48,12 @@ a {
 }
 
 /* Header */
-.site-header {
+..site-header {
+  background: #0e1a2b;
   position: sticky;
   top: 0;
-  z-index: 50;
-  backdrop-filter: blur(18px);
-  background: linear-gradient(to bottom, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.82));
-  border-bottom: 1px solid rgba(148, 163, 184, 0.35);
+  z-index: 10;
+  padding: 0.75rem 0;   /* NEW — increases header height */
 }
 
 .header-inner {
