@@ -26,8 +26,12 @@ body {
 }
 
 img {
-  max-width: 100%;
   display: block;
+}
+
+/* All normal images can scale, but NOT the logo */
+img:not(.logo-image) {
+  max-width: 100%;
 }
 
 a {
