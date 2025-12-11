@@ -66,6 +66,11 @@ a {
   align-items: center;
   gap: 0.65rem;
 }
+.logo-image {
+  height: 42px;   /* adjust this number to make logo bigger/smaller */
+  width: auto;
+  display: block;
+}
 
 .logo-mark {
   background: radial-gradient(circle at 30% 20%, #facc15, #f97316);
