@@ -64,11 +64,7 @@ a {
 }
 
 /* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
-}
+
 .logo-image {
   height: 220px;      /* adjust this number to resize */
   width: auto !important; 
