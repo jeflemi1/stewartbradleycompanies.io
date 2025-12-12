@@ -246,7 +246,6 @@ a {
   padding: 0.3rem 0.7rem;
   border: 1px solid rgba(148, 163, 184, 0.45);
 }
-}
 
 /* Hero card */
 .hero-card {
@@ -290,7 +289,7 @@ a {
 }
 
 .section-alt {
-  background: var(--bg-alt);
+  background: linear-gradient(to bottom, #f8f8f8, #eef2f7);
 }
 
 .section-header {
@@ -321,29 +320,22 @@ a {
 }
 
 .card {
-  background: var(--bg-main);
+  background: radial-gradient(circle at top, var(--brand-dark), #020617);
   border-radius: var(--radius-lg);
   padding: 1.3rem 1.2rem;
-  border: 1px solid rgba(148, 163, 184, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.5);
   box-shadow: var(--shadow-soft);
 }
 
 .card h3 {
-  font-size: 1.05rem;
-  margin-bottom: 0.4rem;
+  color: var(--text-light);
 }
 
 .card p {
-  font-size: 0.9rem;
   color: #cbd5f5;
-  margin-bottom: 0.6rem;
 }
 
 .card-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0.85rem;
   color: #e5e7eb;
 }
 
