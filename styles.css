@@ -31,7 +31,7 @@
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--bg-main);
+  background: var(--surface-1);
   color: var(--text-main);
 }
 
@@ -289,7 +289,8 @@ a {
 }
 
 .section-alt {
-  background: linear-gradient(to bottom, #f8f8f8, #eef2f7);
+  background: radial-gradient(circle at top, var(--surface-2), var(--surface-1) 65%);
+  color: var(--text-main);
 }
 
 .section-header {
