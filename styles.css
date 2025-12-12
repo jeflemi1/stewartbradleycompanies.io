@@ -76,24 +76,24 @@ a {
   object-fit: contain;
 }
 
-.logo-text {
+.logo {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;     /* was 0.65 — doubled spacing */
 }
 
+
 .logo-title {
-  font-size: 1.6rem;
+  font-size: 1.6rem;        /* increase from ~1.2–1.4rem */
   font-weight: 700;
-  color: #e5e7eb;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .logo-subtitle {
-  font-size: 1rem;
-  color: #9ca3af;
+  font-size: 1rem;          /* increase subtitle slightly */
   opacity: 0.85;
 }
+
 
 /* Nav */
 .main-nav {
