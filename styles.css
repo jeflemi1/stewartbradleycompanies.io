@@ -3,6 +3,9 @@
   --brand-primary: #4f6df5;     /* Logo blue */
   --brand-dark:    #0f172a;     /* Deep navy for header */
   --brand-muted:   #94a3b8;     /* Muted blue-gray */
+  --radius-lg:  1rem;
+  --radius-xl:  1.25rem;
+
 
   /* Neutrals */
   --text-main:     #222;
@@ -130,8 +133,9 @@ a {
 .btn-nav {
   padding: 0.5rem 0.9rem;
   border-radius: 999px;
-  border: 1px solid rgba(252, 211, 77, 0.9);
-  background: radial-gradient(circle at top left, rgba(250, 204, 21, 0.25), rgba(15, 23, 42, 0.2));
+  border: 1px solid rgba(79, 109, 245, 0.75);
+  background: rgba(79, 109, 245, 0.12);
+  color: var(--text-light);
 }
 
 /* Mobile nav toggle */
@@ -200,7 +204,7 @@ a {
 }
 
 .btn-primary {
-  bbackground: var(--brand-primary);
+  background: var(--brand-primary);
   color: #ffffff;
   border: none;
   box-shadow: 0 18px 35px rgba(248, 250, 252, 0.28);
@@ -236,7 +240,8 @@ a {
 }
 
 .hero-highlights span {
-  background: rgba(15, 23, 42, 0.75);
+  background: radial-gradient(circle at top, var(--brand-dark), #020617 68%);
+  color: var(--text-light)
   border-radius: 999px;
   padding: 0.3rem 0.7rem;
   border: 1px solid rgba(148, 163, 184, 0.45);
@@ -279,8 +284,8 @@ a {
 /* Sections */
 .section {
   padding: 3.2rem 0;
-  background: radial-gradient(circle at top, #0b1120, #020617 60%);
-  color: #e5e7eb;
+  background: radial-gradient(circle at top, var(--brand-dark), #020617 60%);
+  color: var(--text-light);
 }
 
 .section-alt {
