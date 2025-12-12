@@ -55,7 +55,7 @@ a {
 }
 
 /* Header */
-..site-header {
+.site-header {
   background: var(--brand-dark);
   color: var(--text-light);
   position: sticky;
