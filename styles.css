@@ -158,9 +158,9 @@ a {
 
 /* Hero */
 .hero {
-  background: radial-gradient(circle at top, #1e293b, #020617 68%);
+  background: radial-gradient(circle at top, var(--brand-dark), #020617 68%);
   padding: 3.2rem 0 3.8rem;
-  color: #e5e7eb;
+  color: var(--text-light);
 }
 
 .hero-inner {
@@ -241,10 +241,11 @@ a {
 
 .hero-highlights span {
   background: radial-gradient(circle at top, var(--brand-dark), #020617 68%);
-  color: var(--text-light)
+  color: var(--text-light);
   border-radius: 999px;
   padding: 0.3rem 0.7rem;
   border: 1px solid rgba(148, 163, 184, 0.45);
+}
 }
 
 /* Hero card */
