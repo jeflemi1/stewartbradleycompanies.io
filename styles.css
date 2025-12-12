@@ -94,9 +94,10 @@ a {
 /* Nav */
 .main-nav {
   display: flex;
-  align-items: center;
-  gap: 1.4rem;
-  font-size: 0.9rem;
+  justify-content: space-between;   /* spreads items across the width */
+  flex: 1;                           /* makes the nav take full leftover space */
+  margin-left: 2rem;                 /* pushes nav away from logo block */
+  max-width: 650px;                  /* optional: control how wide the nav should be */
 }
 
 .main-nav a {
