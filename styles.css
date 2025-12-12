@@ -88,6 +88,27 @@ a {
 .logo-subtitle {
   font-size: 1rem;          /* increase subtitle slightly */
 }
+/* Container for the text next to the logo */
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f7f9ff;          /* light text so it pops on dark header */
+}
+
+/* Main company name */
+.logo-title {
+  font-size: 1.7rem;       /* bump size up */
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #f7f9ff;          /* force it bright */
+}
+
+/* Subtitle under the name */
+.logo-subtitle {
+  font-size: 0.95rem;
+  color: rgba(247, 249, 255, 0.8);  /* slightly softer but still readable */
+}
 
 
 /* Nav */
