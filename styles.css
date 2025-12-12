@@ -75,7 +75,7 @@ a {
 .logo {
   display: flex;
   align-items: center;
-  gap: 1.25rem;     /* was 0.65 — doubled spacing */
+  gap: 2.25rem;     /* was 0.65 — doubled spacing */
 }
 
 
