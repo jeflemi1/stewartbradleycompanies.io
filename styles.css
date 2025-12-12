@@ -65,7 +65,7 @@ a {
 /* Logo */
 
 .logo-image {
-  height: 220px;      /* adjust this number to resize */
+  height: 120px;      /* adjust this number to resize */
   width: auto !important; 
   max-width: 500px !important;
   object-fit: contain;
