@@ -60,7 +60,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 0;
 }
 
 /* Logo */
@@ -78,16 +77,6 @@ a {
   gap: 2.25rem;     /* was 0.65 — doubled spacing */
 }
 
-
-.logo-title {
-  font-size: 1.6rem;        /* increase from ~1.2–1.4rem */
-  font-weight: 700;
-  letter-spacing: 0.5px;
-}
-
-.logo-subtitle {
-  font-size: 1rem;          /* increase subtitle slightly */
-}
 /* Container for the text next to the logo */
 .logo-text {
   display: flex;
@@ -114,15 +103,16 @@ a {
 /* Nav */
 .main-nav {
   display: flex;
-  justify-content: space-between;   /* spreads items across the width */
-  flex: 1;                           /* makes the nav take full leftover space */
-  margin-left: 2rem;                 /* pushes nav away from logo block */
-  max-width: 650px;                  /* optional: control how wide the nav should be */
+  flex: 1;
+  justify-content: center;   /* or space-evenly if you want full width */
+  gap: 2.5rem;               /* space between links */
+  margin-left: 3rem;         /* distance from logo block */
 }
 
 .main-nav a {
   color: #e5e7eb;
   opacity: 0.85;
+  padding: 0.3rem 0;
 }
 
 .main-nav a:hover {
