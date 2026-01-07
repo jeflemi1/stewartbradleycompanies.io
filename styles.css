@@ -1,24 +1,24 @@
 :root {
-  /* Brand colors (from logo) */
-  --brand-primary: #4f6df5;     /* Logo blue */
-  --brand-dark:    #0f172a;     /* Deep navy for header */
-  --brand-muted:   #94a3b8;     /* Muted blue-gray */
-  --radius-lg:  1rem;
-  --radius-xl:  1.25rem;
+  /* Brand colors */
+  --brand-primary: #4f6df5;
+  --brand-dark: #0f172a;
 
+  /* Surfaces (NEW – critical) */
+  --surface-1: #020617;   /* main page background */
+  --surface-2: #0b1220;   /* section contrast */
+  --surface-3: #0f172a;   /* cards / panels */
 
-  /* Neutrals */
-  --text-main:     #222;
-  --text-light:    #f8f8f8;
-  --text-muted:    rgba(248,248,248,0.8);
-
-  /* Backgrounds */
-  --bg-main:       #ffffff;
-  --bg-alt:        #f8f8f8;
+  /* Text */
+  --text-main: #e5e7eb;
+  --text-light: #f8fafc;
+  --text-muted: #94a3b8;
 
   /* UI */
-  --border-light:  rgba(255,255,255,0.15);
-  --shadow-soft:   0 12px 28px rgba(0,0,0,0.12);
+  --border-light: rgba(148, 163, 184, 0.35);
+  --shadow-soft: 0 12px 28px rgba(0,0,0,0.45);
+
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
 }
 
 /* Global reset-ish */
@@ -249,7 +249,8 @@ a {
 
 /* Hero card */
 .hero-card {
-  background: var(--bg-main);
+  background: var(--surface-3);
+  color: var(--text-light);
   border-radius: var(--radius-xl);
   border: 1px solid rgba(148, 163, 184, 0.55);
   padding: 1.5rem 1.4rem;
@@ -362,7 +363,7 @@ a {
 }
 
 .project-card {
-  background: var(--bg-main);
+   background: var(--surface-3);
   border-radius: var(--radius-lg);
   border: 1px solid rgba(148, 163, 184, 0.55);
   overflow: hidden;
@@ -592,7 +593,8 @@ textarea {
 
   .hero-card {
     order: -1;
-    background: var(--bg-main);
+    background: var(--surface-3);
+    color: var(--text-light);
     box-shadow: var(--shadow-soft);
   }
 
