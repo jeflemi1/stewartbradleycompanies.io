@@ -1,354 +1,215 @@
-/* =========================================================
-   STEWART BRADLEY COMPANIES – MASTER STYLESHEET
-   Dark Theme • Coastal • Brand-Aligned
-   ========================================================= */
-
-/* =======================
-   ROOT VARIABLES
-   ======================= */
+/* ==============================
+   BRAND VARIABLES
+================================ */
 :root {
-  /* Brand */
-  --brand-primary: #4f6df5;     /* Logo blue */
-  --brand-dark: #0f172a;        /* Deep navy */
-  --brand-accent: #facc15;      /* Coastal gold */
-
-  /* Surfaces */
-  --surface-1: #020617;         /* Page background */
-  --surface-2: #0b1220;         /* Section contrast */
-  --surface-3: #0f172a;         /* Cards & panels */
-
-  /* Text */
-  --text-main: #e5e7eb;
-  --text-light: #f8fafc;
-  --text-muted: #94a3b8;
-
-  /* UI */
-  --border-light: rgba(148,163,184,0.35);
-  --shadow-soft: 0 14px 36px rgba(0,0,0,0.45);
-
-  --radius-lg: 1rem;
-  --radius-xl: 1.25rem;
+  --bg-primary: #0f1f26;      /* Deep coastal navy */
+  --bg-secondary: #152a33;    /* Section background */
+  --bg-card: #1c3640;         /* Card panels */
+  --accent-primary: #cfa24d;  /* Coastal gold */
+  --accent-secondary: #7fb3a6;/* Marsh green */
+  --text-primary: #ffffff;
+  --text-secondary: #c7d4d9;
+  --border-subtle: rgba(255,255,255,0.08);
 }
 
-/* =======================
+/* ==============================
    GLOBAL RESET
-   ======================= */
-*,
-*::before,
-*::after {
+================================ */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--surface-1);
-  color: var(--text-main);
+html, body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
 }
 
-img {
-  display: block;
-  max-width: 100%;
+/* ==============================
+   TYPOGRAPHY
+================================ */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: 0.3px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+h1 {
+  font-size: 3rem;
 }
 
-/* =======================
-   LAYOUT
-   ======================= */
-.container {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-}
-
-/* =======================
-   HEADER
-   ======================= */
-.site-header {
-  background: var(--brand-dark);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--border-light);
-}
-
-.header-inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-/* Logo */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 2.25rem;
-}
-
-.logo-image {
-  height: 120px;
-  width: auto;
-  object-fit: contain;
-}
-
-.logo-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.logo-title {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  color: var(--text-light);
-}
-
-.logo-subtitle {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-/* Navigation */
-.main-nav {
-  display: flex;
-  gap: 2.75rem;
-  align-items: center;
-}
-
-.main-nav a {
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-.main-nav a:hover {
-  color: var(--text-light);
-}
-
-.btn-nav {
-  padding: 0.55rem 1.1rem;
-  border-radius: 999px;
-  border: 1px solid var(--brand-primary);
-  background: rgba(79,109,245,0.15);
-  color: var(--text-light);
-}
-
-/* Mobile toggle */
-.nav-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 0.25rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-toggle span {
-  width: 22px;
-  height: 2px;
-  background: var(--text-light);
-  border-radius: 999px;
-}
-
-/* =======================
-   HERO
-   ======================= */
-.hero {
-  background: radial-gradient(circle at top, var(--surface-2), var(--surface-1) 65%);
-  padding: 3.5rem 0 4rem;
-}
-
-.hero-inner {
-  display: grid;
-  grid-template-columns: 2.1fr 1.4fr;
-  gap: 2.5rem;
-}
-
-.hero h1 {
-  font-size: clamp(2.2rem, 2.8vw, 3rem);
-  line-height: 1.1;
+h2 {
+  font-size: 2.25rem;
   margin-bottom: 1rem;
 }
 
-.hero p {
-  color: #cbd5f5;
-  max-width: 36rem;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 0.8rem;
-  margin-top: 1.6rem;
-}
-
-/* Buttons */
-.btn-primary {
-  background: var(--brand-primary);
-  color: #fff;
-  padding: 0.75rem 1.6rem;
-  border-radius: 999px;
-  border: none;
-  font-weight: 600;
-  box-shadow: 0 18px 40px rgba(79,109,245,0.35);
-}
-
-.btn-secondary {
-  background: transparent;
-  border: 2px solid var(--brand-primary);
-  color: var(--brand-primary);
-  padding: 0.7rem 1.4rem;
-  border-radius: 999px;
-}
-
-.btn-primary:hover,
-.btn-secondary:hover {
-  transform: translateY(-1px);
-}
-
-/* Hero Card */
-.hero-card {
-  background: var(--surface-3);
-  border-radius: var(--radius-xl);
-  padding: 1.6rem;
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-soft);
-}
-
-.hero-card h2 {
+h3 {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
 }
 
-.hero-card p,
-.hero-card li {
-  color: #e5e7eb;
+p {
+  color: var(--text-secondary);
+  font-size: 1rem;
 }
 
-.hero-card li::before {
-  content: "•";
-  color: var(--brand-accent);
-  margin-right: 0.5rem;
+/* ==============================
+   LINKS & BUTTONS
+================================ */
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
 }
 
-/* =======================
-   SECTIONS
-   ======================= */
-.section {
-  padding: 3.5rem 0;
-  background: var(--surface-1);
+a:hover {
+  text-decoration: underline;
 }
 
-.section-alt {
-  background: var(--surface-2);
+.button-primary {
+  background-color: var(--accent-primary);
+  color: #000;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-block;
+  transition: all 0.25s ease;
 }
 
-.section-header {
+.button-primary:hover {
+  background-color: #ddb35c;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   LAYOUT HELPERS
+================================ */
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==============================
+   HEADER / HERO
+================================ */
+.hero {
+  background: linear-gradient(
+    180deg,
+    rgba(15,31,38,0.95),
+    rgba(15,31,38,0.85)
+  );
   text-align: center;
-  margin-bottom: 2.2rem;
+  padding: 120px 20px;
 }
 
-.section-header h2 {
-  font-size: 1.6rem;
+.hero h1 {
+  margin-bottom: 15px;
 }
 
-.section-header p {
-  color: var(--text-muted);
+.hero .subheading {
+  color: var(--accent-secondary);
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-/* =======================
-   CARDS
-   ======================= */
-.cards-grid {
+/* ==============================
+   GENERIC DARK SECTIONS
+================================ */
+.section-dark {
+  background-color: var(--bg-secondary);
+}
+
+.section-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
+}
+
+/* ==============================
+   OUR PROCESS (VISUAL UPGRADE)
+================================ */
+.process-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.6rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.process-card {
+  background-color: var(--bg-card);
+  padding: 35px 30px;
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  position: relative;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.process-step {
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent-secondary);
+  margin-bottom: 12px;
+}
+
+.process-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.process-card p {
+  font-size: 0.95rem;
+}
+
+/* Accent line */
+.process-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--accent-primary),
+    var(--accent-secondary)
+  );
+  border-radius: 12px 12px 0 0;
+}
+
+/* ==============================
+   SERVICES / CARDS
+================================ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 
 .card {
-  background: var(--surface-3);
-  border-radius: var(--radius-lg);
-  padding: 1.5rem;
-  border: 1px solid var(--border-light);
-  box-shadow: var(--shadow-soft);
+  background-color: var(--bg-card);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
 }
 
-.card h3 {
-  color: var(--text-light);
-}
-
-.card p,
-.card li {
-  color: #cbd5f5;
-}
-
-.card li::before {
-  content: "▹";
-  color: var(--brand-accent);
-  margin-right: 0.4rem;
-}
-
-/* =======================
-   CONTACT
-   ======================= */
-.contact-form {
-  background: var(--surface-3);
-  border-radius: var(--radius-xl);
-  padding: 1.6rem;
-  border: 1px solid var(--border-light);
-}
-
-label {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-input,
-textarea,
-select {
-  background: rgba(15,23,42,0.85);
-  border: 1px solid var(--border-light);
-  border-radius: 0.6rem;
-  padding: 0.6rem;
-  color: var(--text-light);
-}
-
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: var(--brand-accent);
-}
-
-/* =======================
+/* ==============================
    FOOTER
-   ======================= */
-.site-footer {
-  background: #020617;
-  border-top: 1px solid var(--border-light);
-  padding: 2rem 0;
+================================ */
+footer {
+  background-color: #0b171d;
+  padding: 40px 20px;
   text-align: center;
-  color: var(--text-muted);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
 }
-
-/* =======================
-   RESPONSIVE
-   ======================= */
-@media (max-width: 960px) {
-  .hero-inner,
-  .cards-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .nav-toggle {
-    display: flex;
-  }
-
-  .main-nav {
-    display: none;
-  }
-}
-
