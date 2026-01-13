@@ -2,342 +2,135 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Stewart Bradley Companies | Residential Construction & Renovations</title>
-  <meta name="description" content="Stewart Bradley Companies provides high-quality home renovations, deck and pier rebuilds, and construction management & consulting services.">
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stewart Bradley Companies</title>
+
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <!-- Header & Navigation -->
-  <header class="site-header">
-    <div class="container header-inner">
-     <div class="logo">
-<img src="sbc-logo.png" alt="Stewart Bradley Companies logo" class="logo-image" />
-  <div class="logo-text">
-    <span class="logo-title">Stewart Bradley Companies</span>
-    <span class="logo-subtitle">Residential Construction & Consulting</span>
+
+<header>
+  <div class="brand">
+    <img src="logo.png" alt="Stewart Bradley Companies Logo">
+    <div class="brand-name">Stewart Bradley Companies</div>
   </div>
-</div>
 
-      </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#process">Our Process</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-      <nav class="main-nav" id="mainNav">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#process">Our Process</a>
-        <a href="#contact" class="btn-nav">Request a Consultation</a>
-      </nav>
+<section class="hero">
+  <div class="container">
+    <h1>Thoughtful Renovations. Coastal-Ready Construction.</h1>
+    <h2>Built for how you live — and where you live.</h2>
+    <a href="#contact" class="btn-primary">Schedule a Consultation</a>
+  </div>
+</section>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
+<section id="services">
+  <div class="container">
+    <h2>What We Do</h2>
 
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="container hero-inner">
-      <div class="hero-content">
-        <h1>Thoughtful Renovations. Coastal-Ready Construction.</h1>
-        <p class="hero-subheading">
-  Built for how you live — and where you live.
-</p>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Home Renovations</h3>
         <p>
-          With deep experience in coastal and waterfront environments, we build and rebuild with durability in mind—helping protect your home, strengthen docks and piers, and enhance comfort, function, and long-term value.
-        </p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Schedule a Consultation</a>
-          <a href="#projects" class="btn-secondary">View Recent Work</a>
-        </div>
-        <div class="hero-highlights">
-          <span>✔ Residential Renovations</span>
-          <span>✔ Decks & Piers</span>
-          <span>✔ Owner’s Rep & Consulting</span>
-        </div>
-      </div>
-      <div class="hero-card">
-        <h2>Ready to Start a Project?</h2>
-        <p>Tell us about your renovation, deck or pier rebuild, or construction management needs.</p>
-        <ul>
-          <li>Clear scope and honest timelines</li>
-          <li>Coastal & waterfront experience</li>
-          <li>Transparent communication</li>
-        </ul>
-        <a href="#contact" class="btn-primary full-width">Request a Call</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Section -->
-  <section id="services" class="section section-alt">
-    <div class="container">
-      <header class="section-header">
-        <h2>Services</h2>
-        <p>Residential construction services built around your home, your schedule, and your budget.</p>
-      </header>
-
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Home Renovations & Remodeling</h3>
-          <p>
-            From kitchens and bathrooms to whole-home updates, we manage every detail of your renovation.
-          </p>
-          <ul class="card-list">
-            <li>Kitchen & bath remodels</li>
-            <li>Interior reconfigurations & additions</li>
-            <li>Exterior updates & curb appeal</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Stewart Bradley Pier Services, LLC: Deck & Pier Rebuilds</h3>
-          <p>
-            Safe, durable, and code-compliant decks and piers designed for coastal and waterfront environments.
-          </p>
-          <ul class="card-list">
-            <li>New deck construction & rebuilds</li>
-            <li>Pier repair and replacement</li>
-            <li>Material recommendations for your site</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <h3>Construction Management & Consulting</h3>
-          <p>
-            Acting as your advocate, we manage contractors, schedules, and budget so your project stays on track.
-          </p>
-          <ul class="card-list">
-            <li>Pre-construction planning</li>
-            <li>Owner’s representation</li>
-            <li>Scope, budget, and schedule oversight</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Featured Projects Section -->
-  <section id="projects" class="section">
-    <div class="container">
-      <header class="section-header">
-        <h2>Featured Projects</h2>
-        <p>A snapshot of recent work across renovations, decks, and waterfront structures.</p>
-      </header>
-
-      <div class="projects-grid">
-        <article class="project-card">
-          <div class="project-image project-image-1"></div>
-          <div class="project-body">
-            <h3>Whole-Home Renovation</h3>
-            <p>
-              Comprehensive interior and exterior refresh, including updated kitchen, bathrooms, flooring,
-              and exterior trim to modernize a dated home while respecting its character.
-            </p>
-            <ul class="project-meta">
-              <li>Scope: Full renovation</li>
-              <li>Duration: ~4 months</li>
-              <li>Services: Planning, construction, project management</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image project-image-2"></div>
-          <div class="project-body">
-            <h3>Waterfront Deck & Pier Rebuild</h3>
-            <p>
-              Removal of failing structures and installation of a new deck and pier designed to handle
-              coastal conditions and provide safe access to the water.
-            </p>
-            <ul class="project-meta">
-              <li>Scope: Deck & pier rebuild</li>
-              <li>Focus: Durability, safety, code compliance</li>
-              <li>Services: Design input, construction, inspections</li>
-            </ul>
-          </div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-image project-image-3"></div>
-          <div class="project-body">
-            <h3>Owner’s Representative on Custom Home</h3>
-            <p>
-              Represented the homeowner throughout a ground-up custom build, coordinating with the builder,
-              reviewing change orders, and validating schedule & budget.
-            </p>
-            <ul class="project-meta">
-              <li>Scope: Construction management</li>
-              <li>Role: Owner’s rep & advisor</li>
-              <li>Benefit: Fewer surprises, clearer decisions</li>
-            </ul>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section section-alt">
-    <div class="container about-grid">
-      <div>
-        <header class="section-header left">
-          <h2>About Stewart Bradley Companies</h2>
-        </header>
-        <p>
-          Stewart Bradley Companies was founded on a simple idea: homeowners deserve clear communication,
-          honest expectations, and craftsmanship that lasts. We combine hands-on construction experience
-          with structured project management to deliver renovations and waterfront work you can rely on.
-        </p>
-        <p>
-          Whether we’re rebuilding a pier, reimagining a living space, or overseeing a complex project
-          as your construction manager, our focus is the same—protecting your investment and making
-          the process as straightforward as possible.
-        </p>
-      </div>
-      <div class="about-highlights">
-        <div class="about-stat">
-          <span class="about-number">1</span>
-          <span class="about-label">Primary Point of Contact</span>
-        </div>
-        <div class="about-stat">
-          <span class="about-number">3</span>
-          <span class="about-label">Core Service Lines</span>
-        </div>
-        <div class="about-stat">
-          <span class="about-number">100%</span>
-          <span class="about-label">Project Transparency</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <section class="process-section">
-  <div class="process-container">
-    <h2 class="process-title">Our Process</h2>
-    <p class="process-subtitle">
-      Simple. Transparent. Built around how you live — and where you live.
-    </p>
-
-    <div class="process-grid">
-      <div class="process-card">
-        <span class="process-step">01</span>
-        <h3>Consultation</h3>
-        <p>
-          We start with a conversation to understand your goals, your property,
-          and the environment it lives in.
+          Thoughtfully planned upgrades that enhance comfort, function,
+          and long-term value.
         </p>
       </div>
 
-      <div class="process-card">
-        <span class="process-step">02</span>
-        <h3>Design & Planning</h3>
+      <div class="service-card">
+        <h3>Deck & Pier Rebuilds</h3>
         <p>
-          Thoughtful design that balances aesthetics, durability, and coastal
-          performance.
+          Coastal-ready decks, docks, and piers using marine-grade
+          materials built to withstand harsh conditions.
         </p>
       </div>
 
-      <div class="process-card">
-        <span class="process-step">03</span>
-        <h3>Build</h3>
+      <div class="service-card">
+        <h3>Construction Management</h3>
         <p>
-          High-quality craftsmanship using materials suited for your climate
-          and lifestyle.
-        </p>
-      </div>
-
-      <div class="process-card">
-        <span class="process-step">04</span>
-        <h3>Final Walkthrough</h3>
-        <p>
-          We review everything together to ensure it meets expectations —
-          and then some.
+          Clear oversight, experienced coordination, and confidence
+          from start to finish.
         </p>
       </div>
     </div>
   </div>
 </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section section-alt">
-    <div class="container contact-grid">
-      <div>
-        <header class="section-header left">
-          <h2>Request a Consultation</h2>
-        </header>
+<section id="process" class="process">
+  <div class="container">
+    <h2>Our Process</h2>
+    <p>Clear, collaborative, and built around your goals.</p>
+
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-number">01</div>
+        <h3>Consultation</h3>
         <p>
-          Share a few details about your project, and we’ll follow up with next steps and available times
-          for a call or site visit.
+          We listen, assess your space, and discuss solutions tailored
+          to coastal environments.
         </p>
-        <ul class="contact-details">
-          <li><strong>Email:</strong> <a href="mailto:jeff@stewartbradleycompanies.com">jeff@stewartbradleycompanies.com</a></li>
-          <li><strong>Phone:</strong> <a href="tel:18045016783">(804) 501-6783</a></li>
-          <li><strong>Service Area:</strong> Residential projects and coastal/waterfront work in your local region</li>
-        </ul>
       </div>
 
-      <form class="contact-form" action="https://formspree.io/f/xnneobkb" method="POST">
-  <div class="form-row">
-    <div class="form-field">
-      <label for="name">Name</label>
-      <input id="name" name="name" type="text" required />
-    </div>
-    <div class="form-field">
-      <label for="email">Email</label>
-      <input id="email" name="email" type="email" required />
+      <div class="process-step">
+        <div class="step-number">02</div>
+        <h3>Planning</h3>
+        <p>
+          Materials, design, and timelines aligned with durability,
+          function, and aesthetics.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">03</div>
+        <h3>Build</h3>
+        <p>
+          Skilled craftsmanship with consistent communication
+          throughout construction.
+        </p>
+      </div>
+
+      <div class="process-step">
+        <div class="step-number">04</div>
+        <h3>Completion</h3>
+        <p>
+          Final walkthrough ensures quality, longevity, and confidence
+          in your investment.
+        </p>
+      </div>
     </div>
   </div>
+</section>
 
-  <div class="form-row">
-    <div class="form-field">
-      <label for="phone">Phone</label>
-      <input id="phone" name="phone" type="tel" />
-    </div>
-    <div class="form-field">
-      <label for="service">Service Type</label>
-      <select id="service" name="service">
-        <option value="">Select one</option>
-        <option value="Home Renovation">Home Renovation</option>
-        <option value="Deck / Pier Rebuild">Deck / Pier Rebuild</option>
-        <option value="Construction Management / Consulting">Construction Management / Consulting</option>
-        <option value="Other / Not Sure">Other / Not Sure</option>
-      </select>
+<section id="contact" class="cta">
+  <div class="container">
+    <h2>Ready to Get Started?</h2>
+    <p>
+      Work with a contractor who understands thoughtful renovations
+      and coastal-ready construction.
+    </p>
+
+    <div class="cta-actions">
+      <a href="#" class="btn-primary">Schedule a Consultation</a>
+      <a href="#" class="btn-secondary">Request a Call Back</a>
     </div>
   </div>
+</section>
 
-  <div class="form-field">
-    <label for="message">Project Details</label>
-    <textarea
-      id="message"
-      name="message"
-      rows="4"
-      placeholder="Briefly describe your project, location, and timing."
-    ></textarea>
+<footer>
+  <div class="footer-cta">
+    <strong>Stewart Bradley Companies</strong><br>
+    Coastal Renovations • Decks & Piers • Construction Consulting
   </div>
+  © 2026 Stewart Bradley Companies
+</footer>
 
-  <!-- Optional: sets subject line of the email you receive -->
-  <input
-    type="hidden"
-    name="_subject"
-    value="New Project Inquiry - Stewart Bradley Companies"
-  />
-
-  <!-- Optional: simple thank-you redirect (can be your own page later) -->
-  <!-- <input type="hidden" name="_redirect" value="https://www.stewartbradleycompanies.com/#contact-thanks" /> -->
-
-  <button type="submit" class="btn-primary full-width">Send Project Inquiry</button>
-</form>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year"></span> Stewart Bradley Companies. All rights reserved.</p>
-      <p class="footer-meta">Residential construction • Renovations • Deck & pier rebuilds • Construction management & consulting</p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
