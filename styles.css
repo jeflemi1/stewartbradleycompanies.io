@@ -3,22 +3,27 @@
 ========================= */
 
 :root{
-  --navy-900:#020617;
-  --navy-800:#0b1220;
-  --navy-700:#0f172a;
+  /* Brand (from your logo palette you shared earlier) */
+  --brand-navy: #123447;   /* deep blue */
+  --brand-teal: #3AB09E;   /* accent teal */
+  --brand-ink:  #020617;   /* near-black background */
 
-  --brand:#4f6df5;
+  /* Surfaces */
+  --surface-1: #020617;    /* page background */
+  --surface-2: #0b1220;    /* section alt */
+  --surface-3: #0f172a;    /* cards/panels */
 
-  --text:#f8fafc;
-  --muted:#cbd5e1;
+  /* Text */
+  --text: #f8fafc;
+  --muted: #cbd5e1;
   --muted2:#94a3b8;
 
-  --border:rgba(148,163,184,.22);
-  --shadow:0 18px 45px rgba(0,0,0,.35);
+  /* UI */
+  --border: rgba(148,163,184,.22);
+  --shadow: 0 18px 45px rgba(0,0,0,.35);
 
   --r-lg:16px;
   --r-xl:22px;
-
   --max:1100px;
 }
 
