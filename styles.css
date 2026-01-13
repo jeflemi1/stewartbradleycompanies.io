@@ -1,215 +1,241 @@
-/* ==============================
+/* =====================
    BRAND VARIABLES
-================================ */
+===================== */
 :root {
-  --bg-primary: #0f1f26;      /* Deep coastal navy */
-  --bg-secondary: #152a33;    /* Section background */
-  --bg-card: #1c3640;         /* Card panels */
-  --accent-primary: #cfa24d;  /* Coastal gold */
-  --accent-secondary: #7fb3a6;/* Marsh green */
-  --text-primary: #ffffff;
-  --text-secondary: #c7d4d9;
-  --border-subtle: rgba(255,255,255,0.08);
+  --bg-primary: #0f1f1d;
+  --bg-secondary: #162d2a;
+  --bg-card: #1e3a37;
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #cfdad7;
+
+  --accent-primary: #c9a24d;
+  --accent-secondary: #7fb3a6;
 }
 
-/* ==============================
-   GLOBAL RESET
-================================ */
+/* =====================
+   GLOBAL
+===================== */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+body {
+  margin: 0;
+  font-family: "Avenir", Arial, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
-  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
   line-height: 1.6;
 }
 
-/* ==============================
-   TYPOGRAPHY
-================================ */
-h1, h2, h3, h4 {
-  font-weight: 600;
-  letter-spacing: 0.3px;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-h1 {
-  font-size: 3rem;
-}
-
-h2 {
-  font-size: 2.25rem;
-  margin-bottom: 1rem;
-}
-
-h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
+h1, h2, h3 {
+  margin: 0 0 12px;
+  letter-spacing: 0.5px;
 }
 
 p {
   color: var(--text-secondary);
-  font-size: 1rem;
+  margin: 0 0 16px;
 }
 
-/* ==============================
-   LINKS & BUTTONS
-================================ */
-a {
+section {
+  padding: 80px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* =====================
+   HEADER / NAV
+===================== */
+header {
+  background-color: var(--bg-secondary);
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand img {
+  height: 48px;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 36px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+nav a:hover {
   color: var(--accent-primary);
-  text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-.button-primary {
+/* =====================
+   BUTTONS
+===================== */
+.btn-primary {
   background-color: var(--accent-primary);
-  color: #000;
-  padding: 14px 28px;
+  color: #111;
+  padding: 14px 36px;
   border-radius: 6px;
   font-weight: 600;
   display: inline-block;
   transition: all 0.25s ease;
 }
 
-.button-primary:hover {
-  background-color: #ddb35c;
+.btn-primary:hover {
   transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(201,162,77,0.4);
 }
 
-/* ==============================
-   LAYOUT HELPERS
-================================ */
-section {
-  padding: 80px 20px;
+.btn-secondary {
+  border: 1px solid var(--accent-secondary);
+  color: var(--accent-secondary);
+  padding: 12px 32px;
+  border-radius: 6px;
+  display: inline-block;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
+.btn-secondary:hover {
+  background-color: rgba(127,179,166,0.1);
 }
 
-/* ==============================
-   HEADER / HERO
-================================ */
+/* =====================
+   HERO
+===================== */
 .hero {
-  background: linear-gradient(
-    180deg,
-    rgba(15,31,38,0.95),
-    rgba(15,31,38,0.85)
-  );
   text-align: center;
-  padding: 120px 20px;
+  background: linear-gradient(180deg, #0f1f1d, #132b27);
 }
 
 .hero h1 {
-  margin-bottom: 15px;
+  font-size: 3rem;
 }
 
-.hero .subheading {
-  color: var(--accent-secondary);
-  font-size: 1.1rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+.hero h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-bottom: 36px;
 }
 
-/* ==============================
-   GENERIC DARK SECTIONS
-================================ */
-.section-dark {
+/* =====================
+   SERVICES
+===================== */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+.service-card {
+  background-color: var(--bg-card);
+  padding: 32px;
+  border-radius: 10px;
+}
+
+.service-card h3 {
+  color: var(--accent-primary);
+}
+
+/* =====================
+   OUR PROCESS
+===================== */
+.process {
   background-color: var(--bg-secondary);
 }
 
-.section-intro {
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto 60px;
-}
-
-/* ==============================
-   OUR PROCESS (VISUAL UPGRADE)
-================================ */
 .process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 30px;
-}
-
-.process-card {
-  background-color: var(--bg-card);
-  padding: 35px 30px;
-  border-radius: 12px;
-  border: 1px solid var(--border-subtle);
-  position: relative;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.process-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+  margin-top: 40px;
 }
 
 .process-step {
-  font-size: 0.85rem;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  color: var(--accent-secondary);
-  margin-bottom: 12px;
-}
-
-.process-card h3 {
-  color: var(--text-primary);
-  margin-bottom: 10px;
-}
-
-.process-card p {
-  font-size: 0.95rem;
-}
-
-/* Accent line */
-.process-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 4px;
-  width: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--accent-primary),
-    var(--accent-secondary)
-  );
-  border-radius: 12px 12px 0 0;
-}
-
-/* ==============================
-   SERVICES / CARDS
-================================ */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 30px;
-}
-
-.card {
   background-color: var(--bg-card);
   padding: 30px;
-  border-radius: 10px;
-  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  position: relative;
 }
 
-/* ==============================
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgba(201,162,77,0.25);
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.process-step h3 {
+  color: var(--accent-primary);
+}
+
+/* =====================
+   CTA
+===================== */
+.cta {
+  text-align: center;
+  background: linear-gradient(180deg, #132b27, #0f1f1d);
+}
+
+.cta p {
+  max-width: 640px;
+  margin: 0 auto 30px;
+}
+
+.cta-actions {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* =====================
    FOOTER
-================================ */
+===================== */
 footer {
-  background-color: #0b171d;
-  padding: 40px 20px;
+  background-color: #0b1816;
+  padding: 50px 20px;
   text-align: center;
   font-size: 0.9rem;
-  color: var(--text-secondary);
+  color: #9fb8b2;
+}
+
+.footer-cta {
+  margin-bottom: 30px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
 }
