@@ -105,30 +105,39 @@
 
     <section class="contact-section" id="contact">
       <div class="contact-photo"><img src="assets/after-landing.webp" alt="Restored waterfront pier" loading="lazy"></div>
-      <div class="container contact-grid reveal">
+      <div class="container contact-grid contact-grid-balanced reveal">
         <div class="contact-copy">
           <p class="kicker light">Ready to restore your pier?</p>
           <h2>Let’s talk about your pier.</h2>
-          <p>Choose a convenient time for a free consultation, or send us a few details using the estimate form. We will follow up to discuss the next steps.</p>
+          <p>Choose a convenient time for a free consultation. We can discuss what you are seeing, answer initial questions and determine the best next step.</p>
           <a class="btn btn-primary contact-calendly" href="https://calendly.com/jeff-stewartbradleycompanies/residental-pier-services-meeting-" target="_blank" rel="noopener noreferrer">Schedule a Free Pier Consultation</a>
-          <p class="contact-trust">No obligation <span>•</span> Honest recommendations <span>•</span> Same-business-day response</p>
+          <ul class="contact-trust" aria-label="Consultation benefits">
+            <li>Free consultation</li>
+            <li>Honest recommendations</li>
+            <li>Virginia Class A contractor</li>
+            <li>Serving Hampton Roads</li>
+          </ul>
         </div>
-        <div class="contact-divider" aria-hidden="true"><span>OR</span></div>
-        <form class="estimate-form" method="POST" action="https://formspree.io/f/xnneobkb">
-          <input type="hidden" name="_subject" value="New Pier Services Website Inquiry">
-          <input class="form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
-          <div class="form-heading">
-            <p class="kicker">Prefer to send details?</p>
+
+        <div class="contact-divider-vertical" aria-hidden="true"><span>OR</span></div>
+
+        <div class="estimate-panel">
+          <div class="estimate-heading">
+            <p class="kicker">Prefer not to schedule?</p>
             <h3>Request a Free Estimate</h3>
-            <p>Tell us a little about your pier and we’ll follow up to discuss the project.</p>
+            <p>Send a few details below and we will follow up, typically the same business day.</p>
           </div>
-          <div class="form-row"><label><span>Name</span><input type="text" name="name" autocomplete="name" required></label><label><span>Phone</span><input type="tel" name="phone" autocomplete="tel" required></label></div>
-          <div class="form-row"><label><span>Email</span><input type="email" name="email" autocomplete="email" required></label><label><span>Project location</span><input type="text" name="location" placeholder="City or neighborhood"></label></div>
-          <label><span>What does your pier need?</span><select name="service"><option value="">Select a service</option><option>Pier re-decking</option><option>Selective repairs</option><option>Pressure washing or staining</option><option>Rope railing</option><option>Not sure — request an assessment</option></select></label>
-          <label><span>Tell us about the project</span><textarea name="message" rows="5" placeholder="Describe the condition, approximate size and any timing considerations."></textarea></label>
-          <button class="btn btn-primary form-submit" type="submit">Request a Free Estimate</button>
-          <p class="form-note">Submitting this form does not create a contract or guarantee availability.</p>
-        </form>
+          <form class="estimate-form" method="POST" action="https://formspree.io/f/xnneobkb">
+            <input type="hidden" name="_subject" value="New Pier Services Website Inquiry">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" class="form-honeypot">
+            <div class="form-row"><label><span>Name</span><input type="text" name="name" autocomplete="name" required></label><label><span>Phone</span><input type="tel" name="phone" autocomplete="tel" required></label></div>
+            <div class="form-row"><label><span>Email</span><input type="email" name="email" autocomplete="email" required></label><label><span>Project location</span><input type="text" name="location" placeholder="City or neighborhood"></label></div>
+            <label><span>What does your pier need?</span><select name="service"><option value="">Select a service</option><option>Pier re-decking</option><option>Selective repairs</option><option>Pressure washing or staining</option><option>Rope railing</option><option>Not sure — request an assessment</option></select></label>
+            <label><span>Tell us about the project</span><textarea name="message" rows="5" placeholder="Describe the condition, approximate size and any timing considerations."></textarea></label>
+            <button class="btn btn-primary form-submit" type="submit">Request a Free Estimate</button>
+            <p class="form-note">Submitting this form does not create a contract or guarantee availability.</p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
