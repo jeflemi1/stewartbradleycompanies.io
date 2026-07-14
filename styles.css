@@ -13,7 +13,7 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
 
 /* v2.1.3 balanced contact layout */
-.contact-grid-balanced{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:96px;align-items:center;max-width:1240px}
+.contact-grid-balanced{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:96px;align-items:start;max-width:1240px}
 .contact-grid-balanced .contact-copy{text-align:left;max-width:560px}
 .contact-grid-balanced .contact-copy h2{font-size:clamp(3rem,5.5vw,5.6rem)}
 .contact-grid-balanced .contact-trust{justify-content:flex-start;display:grid;grid-template-columns:1fr 1fr;gap:10px 22px}
