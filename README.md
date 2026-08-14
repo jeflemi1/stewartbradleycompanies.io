@@ -1,4 +1,4 @@
-# Stewart Bradley Pier Services Website
+# Stewart Bradley Companies Website
 
 Static website for GitHub Pages.
 
